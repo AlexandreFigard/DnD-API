@@ -1,5 +1,15 @@
+export interface CharacterParams {
+  id: string;
+  name: string;
+  species: string;
+  classType: string;
+  alignment: string;
+  picture: string;
+  campaignId: number;
+}
+
 class Character {
-  id: number;
+  id: string;
   name: string;
   species: string;
   classType: string;
@@ -7,15 +17,15 @@ class Character {
   picture: string;
   campaignId: number;
 
-  constructor(
-    id: number,
-    name: string,
-    species: string,
-    classType: string,
-    alignment: string,
-    picture: string,
-    campaignId: number
-  ) {
+  constructor({
+    id,
+    name,
+    species,
+    classType,
+    alignment,
+    picture,
+    campaignId,
+  }: CharacterParams) {
     this.id = id;
     this.name = name;
     this.species = species;
@@ -25,3 +35,5 @@ class Character {
     this.campaignId = campaignId;
   }
 }
+
+export default Character;

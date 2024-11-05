@@ -1,5 +1,5 @@
 export interface IRequest {
   params: { [key: string]: string };
-  body: unknown;
+  body: any;
   query: { [key: string]: string | undefined };
 }
