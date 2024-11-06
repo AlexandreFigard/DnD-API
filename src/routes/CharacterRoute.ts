@@ -58,6 +58,34 @@ class CharacterRoute implements IRoute {
           });
         });
     });
+    router.get('/classes', async (_, res) => {
+      try {
+        const response = await fetch('https://www.dnd5eapi.co/api/classes');
+        if (!response.ok) {
+          throw new Error(`Failed to fetch classes: ${response.statusText}`);
+        }
+        const classes = await response.json();
+        res.status(200).json(classes);
+      } catch (error) {
+        console.error('Error fetching classes:', error);
+        res.status(500).json({ message: 'Error fetching classes' });
+      }
+    });
+
+    router.get('/classes/:index', async (req, res) => {
+      const index = req.params.index;
+      try {
+        const response = await fetch(`https://www.dnd5eapi.co/api/classes/${index}`);
+        if (!response.ok) {
+          throw new Error(`Failed to fetch class: ${response.statusText}`);
+        }
+        const classChosen = await response.json();
+        res.status(200).json(classChosen);
+      } catch (error) {
+        console.error('Error fetching class:', error);
+        res.status(500).json({ message: 'Error fetching class' });
+      }
+    });
   }
 }
 
