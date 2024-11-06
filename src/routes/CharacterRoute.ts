@@ -15,7 +15,7 @@ class CharacterRoute implements IRoute {
   }
 
   register(router: IRouterAdapter): void {
-    router.post("/characters", async (req, res) => {
+    router.post("/api/characters", async (req, res) => {
       const { name, species, classType, alignment, picture, campaignId } =
         req.body;
 
@@ -58,7 +58,7 @@ class CharacterRoute implements IRoute {
           });
         });
     });
-    router.get('/classes', async (_, res) => {
+    router.get('/api/classes', async (_, res) => {
       try {
         const response = await fetch('https://www.dnd5eapi.co/api/classes');
         if (!response.ok) {
@@ -72,7 +72,7 @@ class CharacterRoute implements IRoute {
       }
     });
 
-    router.get('/classes/:index', async (req, res) => {
+    router.get('/api/classes/:index', async (req, res) => {
       const index = req.params.index;
       try {
         const response = await fetch(`https://www.dnd5eapi.co/api/classes/${index}`);
