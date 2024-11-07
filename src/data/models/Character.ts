@@ -5,7 +5,7 @@ export interface CharacterParams {
   classType: string;
   alignment: string;
   picture: string;
-  campaignId: number;
+  campaignId: string;
 }
 
 class Character {
@@ -15,7 +15,7 @@ class Character {
   classType: string;
   alignment: string;
   picture: string;
-  campaignId: number;
+  campaignId: string;
 
   constructor({
     id,
