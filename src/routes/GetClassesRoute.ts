@@ -10,15 +10,6 @@ export class GetClassesRoute implements IRoute {
   }
 
   register(router: IRouterAdapter): void {
-    router.get("/api/classes/names", async (_, res) => {
-      try {
-        const classNames = await this.classesService.getClasses();
-        res.status(200).json(classNames);
-      } catch (error) {
-        res.status(500).json({ message: error });
-      }
-    });
-
     router.get("/api/classes", async (_, res) => {
       try {
         const classes = await this.classesService.getAllClasses();
