@@ -74,7 +74,7 @@ class CharacterRoute implements IRoute {
       const index = req.params.index;
       try {
         const response = await fetch(
-          `https://www.dnd5eapi.co/api/classes/${index}`
+          `https://www.dnd5eapi.co/api/classes/${index}`,
         );
         if (!response.ok) {
           throw new Error(`Failed to fetch class: ${response.statusText}`);
