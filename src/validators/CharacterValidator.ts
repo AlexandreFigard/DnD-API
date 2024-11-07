@@ -1,6 +1,5 @@
 import CharacterParams from "data/models/Character";
 
-// src/validators/CharacterValidator.ts
 interface ValidationError {
   field: string;
   message: string;

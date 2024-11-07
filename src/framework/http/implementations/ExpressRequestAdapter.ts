@@ -1,4 +1,3 @@
-// src/http/ExpressRequestAdapter.ts
 import { IRequest } from "../interfaces/IRequest";
 import { Request } from "express";
 

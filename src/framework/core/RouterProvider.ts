@@ -1,7 +1,6 @@
-// src/core/RouterFactory.ts
-import { IRouterAdapter } from "../interfaces/IRouterAdapter"; // Updated path
+import { IRouterAdapter } from "../interfaces/IRouterAdapter";
 import { ExpressRouterAdapter } from "../routers/ExpressRouterAdapter";
-import { RouterFramework } from "./RouterFramework"; // Updated path
+import { RouterFramework } from "./RouterFramework";
 
 export class RouterProvider {
   static createRouter(type: RouterFramework): IRouterAdapter {

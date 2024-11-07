@@ -1,4 +1,3 @@
-// src/http/ExpressResponseAdapter.ts
 import { IResponse } from "../interfaces/IResponse";
 import { Response } from "express";
 

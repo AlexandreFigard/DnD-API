@@ -1,4 +1,3 @@
-// src/routes/UserRoute.ts
 import { IRoute } from "../framework/interfaces/IRoute";
 import { IRouterAdapter } from "../framework/interfaces/IRouterAdapter";
 import RepositoryFactory from "../data/factories/RepositoryFactory";
@@ -19,7 +18,6 @@ class CharacterRoute implements IRoute {
       const { name, species, classType, alignment, picture, campaignId } =
         req.body;
 
-      // Validate request data
       const errors = CharacterValidator.validate({
         name,
         species,
