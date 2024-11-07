@@ -1,37 +1,37 @@
-![Dungeons & Dragons Book Image](https://i.imgur.com/qdjuwD9.png)
+![📖 Dungeons & Dragons Book Image](https://i.imgur.com/qdjuwD9.png)
 
-# Dungeons & Dragons
+# 🐉 Dungeons & Dragons API
 
-This repository contains the API for the Dungeons & Dragons project for ISEN C.O.O.
+Welcome to the **Dungeons & Dragons** project repository for **ISEN C.O.O.**! ✨
 
-## Getting Started
+## 🚀 Getting Started
 
-To get started, clone this repository to your local machine:
+To get started, clone this repository: 🖥️
 
 ```bash
 git clone https://github.com/AlexandreFigard/coo-tp-DnD
 ```
 
-Then, install the dependencies:
+Then, install the dependencies: 📦
 
 ```bash
 npm install
 ```
 
-Finally, start the development server:
+Finally, start the development server: 🕹️
 
 ```bash
 npm start
 ```
 
-## Features
+## ⚔️ Features
 
-- Character creation
-- Retreive character information for creation
+- 🛠️ **Character creation** 
+- 📜 Retrieve informations for **Character Creation**
 
-# Endpoints
+# 📚 API Endpoints
 
-### 1. Create a Character
+### 1. Create a Character 🎨
 
 - **Method**: `POST`
 - **URL**: `/api/characters`
@@ -39,29 +39,31 @@ npm start
 
 **Required JSON Parameters**:
 
-- `name` (string, required)
-- `species` (string, required)
-- `classType` (string, required)
-- `alignment` (string, optional)
-- `picture` (string, required, URL)
-- `campaignId` (string, optional)
+| Paramètre| Type| Requis| Description|
+|--------------|---------|----------|---------------------------------|
+| `name`| string| Yes| Character Name|
+| `species`| string| Yes| Character Species|
+| `classType`| string| Yes| Character Class Type|
+| `alignment`| string| Yes| Character Alignment|
+| `picture`| string| Yes| Character Image|
+| `campaignId`| string| No| Campaign Id link to this character|
 
-### 2. Get All Classes (Raw Data)
+### 2. Get All Classes 🧙
 
 - **Method**: `GET`
 - **URL**: `/api/classes`
-- **Description**: Returns all classes (raw data).
+- **Description**: Returns all classes in raw data from [DnD 5e API](https://5e-bits.github.io/docs/).
 
-### 3. Get Class Details
+### 3. Get Class Details 🧙📚
 
 - **Method**: `GET`
 - **URL**: `/api/classes/:index`
-- **Description**: Returns the details of a class by its `index`.
-- **Notes**: The `index` is the name of the class in the array of classes in lowercase.
+- **Description**: Returns detailed information about a specific class by its `index`.
+- **Note**: The `index` should match the class name in lowercase as it appears in the array of classes.
 
-## Members
+## 🧑‍🤝‍🧑 Contributors
 
-- [Alexandre FIGARD](https://github.com/AlexandreFigard)
-- [Mathéo BOULOGNE](https://github.com/Shiyro)
-- [Mathieu BEDEZ](https://github.com/mbedez)
-- [Bastiste LEMATTRE](https://github.com/Baptistelemattre)
+- [Alexandre FIGARD](https://github.com/AlexandreFigard) 
+- [Mathéo BOULOGNE](https://github.com/Shiyro) 
+- [Mathieu BEDEZ](https://github.com/mbedez) 
+- [Baptiste LEMATTRE](https://github.com/Baptistelemattre) 
