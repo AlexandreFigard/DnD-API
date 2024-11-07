@@ -24,6 +24,10 @@ Finally, start the development server: 🕹️
 npm start
 ```
 
+## Notes  
+
+To change the default port (**3000**), copy `.env.dist` rename it to `.env` and adjust the port setting.
+
 ## ⚔️ Features
 
 - 🛠️ **Character creation** 
