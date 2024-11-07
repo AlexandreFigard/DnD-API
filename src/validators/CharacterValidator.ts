@@ -9,12 +9,6 @@ export class CharacterValidator {
   static validate(data: Partial<CharacterParams>): ValidationError[] {
     const errors: ValidationError[] = [];
 
-    // if (!data.campaignId || typeof data.campaignId !== "number") {
-    //   errors.push({
-    //     field: "campaignId",
-    //     message: "'campaignId' must be a number",
-    //   });
-    // }
     if (!data.name || typeof data.name !== "string") {
       errors.push({
         field: "name",
