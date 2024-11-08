@@ -16,7 +16,7 @@ export class CharacterValidator {
   constructor(
     alignmentService: IAlignmentService,
     speciesService: ISpeciesService,
-    classesService: IClassesService,
+    classesService: IClassesService
   ) {
     this.alignmentService = alignmentService;
     this.speciesService = speciesService;
@@ -81,7 +81,6 @@ export class CharacterValidator {
       });
     }
 
-    console.log(errors);
     return errors;
   }
 }
