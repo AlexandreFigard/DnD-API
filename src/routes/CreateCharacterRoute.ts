@@ -18,7 +18,7 @@ export class CreateCharacterRoute implements IRoute {
       characterRepository,
       alignmentService,
       speciesService,
-      classesService,
+      classesService
     );
   }
 
@@ -26,16 +26,16 @@ export class CreateCharacterRoute implements IRoute {
     router.post("/api/characters", async (req, res) => {
       try {
         const characterData = req.body;
-        const result =
+        const createdCharacter =
           await this.characterService.createCharacter(characterData);
 
-        if (Array.isArray(result)) {
-          return res.status(400).json({ errors: result });
+        if (Array.isArray(createdCharacter)) {
+          return res.status(400).json({ errors: createdCharacter });
         }
 
         res.status(201).json({
           message: "Character created successfully!",
-          character: result,
+          character: createdCharacter,
         });
       } catch (error) {
         const errorMessage =
