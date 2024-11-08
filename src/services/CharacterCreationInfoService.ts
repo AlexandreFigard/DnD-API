@@ -47,7 +47,7 @@ export class CharacterCreationInfoService {
         name: { type: "string", required: true },
         species: { type: "string", required: true, options: species },
         classType: { type: "string", required: true, options: classes },
-        alignment: { type: "string", required: false, options: alignments },
+        alignment: { type: "string", required: true, options: alignments },
         picture: { type: "string", required: true, format: "url" },
         campaignId: { type: "string", required: false, format: "uuid" },
       },
