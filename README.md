@@ -65,6 +65,13 @@ To change the default port (**3000**), copy `.env.dist` rename it to `.env` and 
 - **Description**: Returns detailed information about a specific class by its `index`.
 - **Note**: The `index` should match the class name in lowercase as it appears in the array of classes.
 
+
+### 4. Get Character Creation Informations 🎨🧙📚
+
+- **Method**: `GET`
+- **URL**: `/api/characters/creation-info`
+- **Description**: Returns detailed field for character creation.
+
 ## 🧑‍🤝‍🧑 Contributors
 
 - [Alexandre FIGARD](https://github.com/AlexandreFigard)
