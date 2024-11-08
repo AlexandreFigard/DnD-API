@@ -24,13 +24,13 @@ Finally, start the development server: 🕹️
 npm start
 ```
 
-## Notes  
+## Notes
 
 To change the default port (**3000**), copy `.env.dist` rename it to `.env` and adjust the port setting.
 
 ## ⚔️ Features
 
-- 🛠️ **Character creation** 
+- 🛠️ **Character creation**
 - 📜 Retrieve informations for **Character Creation**
 
 # 📚 API Endpoints
@@ -43,14 +43,14 @@ To change the default port (**3000**), copy `.env.dist` rename it to `.env` and 
 
 **Required JSON Parameters**:
 
-| Paramètre| Type| Requis| Description|
-|--------------|---------|----------|---------------------------------|
-| `name`| string| Yes| Character Name|
-| `species`| string| Yes| Character Species|
-| `classType`| string| Yes| Character Class Type|
-| `alignment`| string| Yes| Character Alignment|
-| `picture`| string| Yes| Character Image|
-| `campaignId`| string| No| Campaign Id link to this character|
+| Parameter    | Type   | Required | Description                        |
+| ------------ | ------ | -------- | ---------------------------------- |
+| `name`       | string | Yes      | Character Name                     |
+| `species`    | string | Yes      | Character Species                  |
+| `classType`  | string | Yes      | Character Class Type               |
+| `alignment`  | string | Yes      | Character Alignment                |
+| `picture`    | string | Yes      | Character Image                    |
+| `campaignId` | string | No       | Campaign Id link to this character |
 
 ### 2. Get All Classes 🧙
 
@@ -67,7 +67,7 @@ To change the default port (**3000**), copy `.env.dist` rename it to `.env` and 
 
 ## 🧑‍🤝‍🧑 Contributors
 
-- [Alexandre FIGARD](https://github.com/AlexandreFigard) 
-- [Mathéo BOULOGNE](https://github.com/Shiyro) 
-- [Mathieu BEDEZ](https://github.com/mbedez) 
-- [Baptiste LEMATTRE](https://github.com/Baptistelemattre) 
+- [Alexandre FIGARD](https://github.com/AlexandreFigard)
+- [Mathéo BOULOGNE](https://github.com/Shiyro)
+- [Mathieu BEDEZ](https://github.com/mbedez)
+- [Baptiste LEMATTRE](https://github.com/Baptistelemattre)
